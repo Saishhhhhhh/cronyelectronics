@@ -1,0 +1,869 @@
+/* ========================================================
+   CRONY ELECTRONICS - PROPORTIONAL SCALE & ALIGNMENT FIXES
+   Keeps exact template styling intact while preventing 
+   oversized fonts and wrapping issues on desktop screens.
+   ======================================================== */
+
+/* 1. Header & Menu Alignment */
+.bottom-bar-text {
+  flex-wrap: nowrap;
+}
+
+.bottom-bar-text a img {
+  max-height: 46px;
+  width: auto;
+  display: block;
+}
+
+.navbar-links {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.navbar-links li:not(:last-child) {
+  padding-right: 22px !important; /* Prevents menu wrapping on laptops */
+}
+
+.navbar-links li a {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  white-space: nowrap;
+}
+
+.menu-end {
+  flex-shrink: 0;
+}
+
+.menu-end .btn {
+  padding: 10px 22px !important;
+  font-size: 14px !important;
+  white-space: nowrap;
+}
+
+/* ========================================================
+   2. HERO SLIDER - 100VH FULL VIEWPORT & MODERN AESTHETICS
+   ======================================================== */
+.swiper.hero-one-slider {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #071220 !important;
+}
+
+.hero-section-one {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  clip-path: none !important; /* Removes the diagonal wedge cut */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Hide template's default pseudo-element since we have dedicated .hero-overlay */
+.hero-section-one::before {
+  display: none !important;
+}
+
+/* Defensive Hero Overrides: Ensure no secondary worker cards, old clip-paths, or stale duplicate elements ever render */
+.hero-img,
+.hero-feature-showcase,
+.hero-feature-img,
+.hero-feature-badge,
+.hero-section-one .col-lg-4,
+.hero-one-slider .hero-img,
+.hero-one-slider .col-lg-4 {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+
+.hero-section-one .col-lg-8,
+.hero-section-one .col-md-10 {
+  width: 100% !important;
+  max-width: 840px !important;
+  flex: 0 0 100% !important;
+}
+
+.hero-section-one,
+.swiper-slide.hero-section-one,
+.swiper-slide-duplicate.hero-section-one {
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+}
+
+/* Ken Burns Animated Background Layer */
+.hero-kenburns-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  transform-origin: center center !important;
+  z-index: 0 !important;
+  will-change: transform !important;
+  transform: scale(1);
+}
+
+/* Ken Burns slow continuous zoom & pan on active slide */
+.swiper-slide-active .hero-kenburns-bg {
+  animation: kenBurnsEffect 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate !important;
+}
+
+@keyframes kenBurnsEffect {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-1%, -1%);
+  }
+}
+
+/* Subtle, Light Dark Gradient Overlay */
+.hero-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(90deg, rgba(8, 18, 30, 0.68) 0%, rgba(8, 18, 30, 0.42) 55%, rgba(8, 18, 30, 0.15) 100%) !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+/* Main Container - Clearance below absolute header */
+.hero-section-one .container {
+  position: relative !important;
+  z-index: 5 !important;
+  padding-top: 130px !important; /* Generous clearance preventing header overlap */
+  padding-bottom: 50px !important;
+  max-width: 1260px !important;
+}
+
+/* Immediate Text Visibility & Animation Fix (removes 2-second template delay bug) */
+.hero-section-one .hero-text h1,
+.hero-section-one .hero-text .text,
+.hero-section-one .hero-text .text p,
+.hero-section-one .link-box,
+.hero-section-one .hero-cta-wrap {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: opacity 0.4s ease !important;
+}
+
+/* Smooth Content Entry Animation on Slide Transition */
+.swiper-slide-active .hero-subtitle {
+  animation: heroFadeSlideIn 0.8s ease backwards !important;
+}
+
+.swiper-slide-active .hero-text h1 {
+  animation: heroFadeSlideIn 0.8s 0.12s ease backwards !important;
+}
+
+.swiper-slide-active .hero-text .text p {
+  animation: heroFadeSlideIn 0.8s 0.24s ease backwards !important;
+}
+
+.swiper-slide-active .hero-cta-wrap {
+  animation: heroFadeSlideIn 0.8s 0.36s ease backwards !important;
+}
+
+@keyframes heroFadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Subtitle - Pure clean text (no pills / no capsule background) */
+.hero-subtitle {
+  display: inline-block !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.2px !important;
+  color: #ffcc12 !important; /* Theme gold */
+  margin-bottom: 16px !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Hero Title */
+.hero-text h1 {
+  font-size: 48px !important;
+  line-height: 1.18 !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 18px !important;
+  max-width: 780px !important;
+  letter-spacing: -0.5px !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Hero Description */
+.hero-text .text p {
+  font-size: 18px !important;
+  line-height: 29px !important;
+  color: rgba(255, 255, 255, 0.90) !important;
+  max-width: 650px !important;
+  padding: 0 !important;
+  margin-bottom: 32px !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Dual CTA Group */
+.hero-cta-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+}
+
+.hero-btn-primary {
+  background: #ffcc12 !important;
+  color: #0c192c !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  padding: 13px 28px !important;
+  border-radius: 6px !important;
+  border: 2px solid #ffcc12 !important;
+  box-shadow: 0 6px 22px rgba(255, 204, 18, 0.35) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+.hero-btn-primary:hover {
+  background: #009a4e !important;
+  border-color: #009a4e !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(0, 154, 78, 0.4) !important;
+}
+
+.hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  padding: 13px 24px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  color: #ffcc12 !important;
+  transform: translateY(-2px) !important;
+}
+
+
+
+/* Modern Swiper Arrow Controls (NO ugly yellow/green square blocks) */
+.hero-one-slider .swiper-button {
+  position: absolute !important;
+  right: 48px !important;
+  bottom: 36px !important;
+  top: auto !important;
+  left: auto !important;
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  z-index: 25 !important;
+}
+
+.hero-one-slider .swiper-button-prev,
+.hero-one-slider .swiper-button-next {
+  position: static !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.hero-one-slider .swiper-button-prev:after,
+.hero-one-slider .swiper-button-next:after {
+  display: none !important;
+}
+
+.hero-one-slider .swiper-button i {
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  display: inline !important;
+}
+
+.hero-one-slider .swiper-button-prev:hover,
+.hero-one-slider .swiper-button-next:hover {
+  background: #009a4e !important;
+  border-color: #009a4e !important;
+  color: #ffffff !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 20px rgba(0, 154, 78, 0.5) !important;
+}
+
+/* Modern Swiper Pagination Dots */
+.swiper.hero-one-slider .swiper-pagination {
+  position: absolute !important;
+  left: 48px !important;
+  bottom: 48px !important;
+  width: auto !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  z-index: 25 !important;
+}
+
+.swiper.hero-one-slider .swiper-pagination span.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: rgba(255, 255, 255, 0.35) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  transition: all 0.35s ease !important;
+}
+
+.swiper.hero-one-slider .swiper-pagination span.swiper-pagination-bullet-active {
+  width: 32px !important;
+  border-radius: 6px !important;
+  background: #ffcc12 !important;
+  box-shadow: 0 0 12px rgba(255, 204, 18, 0.8) !important;
+}
+
+/* 3. Section Headings (Prevents 55px blown-out titles) */
+.heading {
+  width: 82% !important;
+  padding-bottom: 35px !important;
+  text-align: center;
+}
+
+.heading span {
+  font-size: 14px !important;
+  padding-bottom: 8px !important;
+}
+
+.heading h2 {
+  font-size: 34px !important;
+  line-height: 1.25 !important;
+}
+
+.heading.two {
+  width: 100% !important;
+  padding-bottom: 30px !important;
+}
+
+.heading.two h2 {
+  font-size: 34px !important;
+  line-height: 1.25 !important;
+}
+
+/* 4. Experience Section */
+.experience h3 {
+  font-size: 28px !important;
+  padding-bottom: 8px !important;
+}
+
+.experience p {
+  font-size: 16px !important;
+  line-height: 26px !important;
+  width: 100% !important;
+  padding-bottom: 18px !important;
+}
+
+.director-renewable h4 {
+  font-size: 24px !important;
+}
+
+.director-renewable span {
+  font-size: 15px !important;
+}
+
+.count-style h2 {
+  font-size: 26px !important;
+}
+
+.count-style p {
+  font-size: 14px !important;
+}
+
+/* 5. Services Infinite Carousel */
+.services-carousel-section {
+  padding-top: 50px !important;
+  padding-bottom: 60px !important;
+  background: #fbfbfb;
+  overflow: hidden;
+}
+
+.services-slider {
+  padding-top: 35px !important;
+  padding-bottom: 75px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.services-slider .swiper-slide {
+  height: auto !important;
+  display: flex !important;
+}
+
+.services-slider .services {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  padding: 0 35px !important;
+  background: #fff !important;
+  min-height: 460px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid #dcdcdc !important;
+  transition: all 0.3s ease;
+}
+
+.services-slider .services:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
+  border-color: #009a4e !important;
+}
+
+.services-slider .services h3 a {
+  font-size: 20px !important;
+  line-height: 1.3 !important;
+}
+
+.services-slider .services p {
+  font-size: 14px !important;
+  line-height: 23px !important;
+  padding-top: 8px !important;
+  padding-bottom: 16px !important;
+  color: #555;
+}
+
+.services-section-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  margin-bottom: 25px !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.services-section-header .heading.two {
+  max-width: 720px !important;
+  margin: 0 !important;
+}
+
+.services-nav-controls {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding-bottom: 8px !important;
+}
+
+.services-nav-btn {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background-color: #009a4e !important;
+  color: #ffffff !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 14px rgba(0, 154, 78, 0.25) !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.services-nav-btn:hover {
+  background-color: #FFC80B !important;
+  color: #000000 !important;
+  transform: scale(1.08) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
+}
+
+.services-nav-btn i {
+  font-size: 18px !important;
+  color: inherit !important;
+}
+
+.services-slider {
+  padding-top: 25px !important;
+  padding-bottom: 60px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  margin-top: 5px !important;
+}
+
+.services-slider .swiper-slide {
+  height: auto !important;
+  display: flex !important;
+}
+
+.services-slider .services {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  padding: 0 32px !important;
+  background: #ffffff !important;
+  min-height: 480px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #e2e2e2 !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+}
+
+.services-slider .services:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important;
+  border-color: #009a4e !important;
+}
+
+.services-slider .services h3 a {
+  font-size: 20px !important;
+  line-height: 1.35 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  min-height: 54px !important;
+  color: #111111 !important;
+}
+
+.services-slider .services p {
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #555555 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  min-height: 72px !important;
+  padding-top: 6px !important;
+  padding-bottom: 12px !important;
+}
+
+.services-slider .services > img {
+  width: calc(100% + 64px) !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin-left: -32px !important;
+  margin-bottom: -48px !important;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+
+/* 6. Working Process Tabs - Perfectly Centered & Non-Overlapping */
+.sustainable-section .heading {
+  position: relative !important;
+  margin-bottom: 25px !important;
+  padding-bottom: 15px !important;
+  clear: both !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Consultation Banner Proportion Scaling */
+.need-expert {
+  padding: 40px 48px !important;
+  margin-bottom: 50px !important;
+  border-radius: 12px !important;
+}
+
+.need-expert h4 {
+  font-size: 28px !important;
+  line-height: 1.25 !important;
+  width: 90% !important;
+  padding-bottom: 18px !important;
+  font-weight: 800 !important;
+}
+
+.phone-number i {
+  width: 52px !important;
+  height: 52px !important;
+  font-size: 24px !important;
+  margin-right: 16px !important;
+  border-radius: 6px !important;
+}
+
+.phone-number a {
+  font-size: 22px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+}
+
+.phone-number span {
+  font-size: 11px !important;
+  letter-spacing: 0.8px !important;
+}
+
+.need-expert form {
+  width: 48% !important;
+}
+
+.need-expert form input {
+  height: 48px !important;
+  font-size: 14px !important;
+}
+
+.need-expert form textarea {
+  height: 90px !important;
+  font-size: 14px !important;
+}
+
+.need-expert form .btn {
+  padding: 10px 24px !important;
+  font-size: 14px !important;
+}
+
+#v-pills-tab,
+.process-tabs-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  width: 100% !important;
+  margin-top: 20px !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  z-index: 5 !important;
+  clear: both !important;
+  text-align: center !important;
+  float: none !important;
+  padding: 0 !important;
+}
+
+#v-pills-tab .nav-link,
+.process-tabs-wrapper .nav-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0 28px 0 0 !important;
+  height: 60px !important;
+  background-color: #ffffff !important;
+  border: 1px solid #d4d4d4 !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #222222 !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+#v-pills-tab .nav-link:hover,
+.process-tabs-wrapper .nav-link:hover {
+  border-color: #009a4e !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1) !important;
+}
+
+#v-pills-tab .nav-link.active,
+.process-tabs-wrapper .nav-link.active {
+  background-color: #009a4e !important;
+  color: #ffffff !important;
+  border-color: #009a4e !important;
+  box-shadow: 0 8px 24px rgba(0, 154, 78, 0.3) !important;
+  transform: translateY(-2px) !important;
+}
+
+#v-pills-tab .nav-link span,
+.process-tabs-wrapper .nav-link span {
+  background-color: #FFC80B !important;
+  color: #000000 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  margin: 0 18px 0 0 !important;
+  border-radius: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+#v-pills-tab .nav-link.active span,
+.process-tabs-wrapper .nav-link.active span {
+  background-color: #FFC80B !important;
+  color: #000000 !important;
+}
+
+.research-analysis h3 {
+  font-size: 30px !important;
+  padding-bottom: 12px !important;
+}
+
+.research-analysis p {
+  font-size: 15px !important;
+  line-height: 25px !important;
+}
+
+.research-analysis ul.list-style li {
+  font-size: 15px !important;
+  line-height: 24px !important;
+}
+
+/* 7. Fun Facts */
+.fun-facts {
+  padding: 25px 20px !important;
+}
+
+.fun-facts h2 {
+  font-size: 28px !important;
+}
+
+.fun-facts span {
+  font-size: 14px !important;
+}
+
+/* 8. Testimonials */
+.c-slider p {
+  font-size: 16px !important;
+  line-height: 28px !important;
+}
+
+/* 9. Footer */
+footer {
+  padding-top: 70px !important;
+}
+
+.widget-title h3 {
+  font-size: 20px !important;
+}
+
+.widget-title ul li a {
+  font-size: 14px !important;
+}
+
+.get-in-touch h6 a {
+  font-size: 14px !important;
+}
+
+.get-in-touch span {
+  font-size: 13px !important;
+}
+
+/* ========================================================
+   10. Responsive Adjustments for 100vh Hero Slider
+   ======================================================== */
+@media (max-width: 991px) {
+  .swiper.hero-one-slider {
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+  
+  .hero-section-one {
+    height: auto !important;
+    min-height: 100vh !important;
+    padding-top: 150px !important;
+    padding-bottom: 90px !important;
+  }
+  
+  .hero-section-one .container {
+    padding-top: 0 !important;
+  }
+  
+  .hero-text {
+    text-align: center !important;
+    margin-bottom: 40px !important;
+  }
+  
+  .hero-text .text p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .hero-cta-wrap {
+    justify-content: center !important;
+  }
+  
+  .hero-feature-showcase {
+    max-width: 420px !important;
+  }
+  
+  .hero-one-slider .swiper-button {
+    right: 20px !important;
+    bottom: 20px !important;
+  }
+  
+  .swiper.hero-one-slider .swiper-pagination {
+    left: 20px !important;
+    bottom: 30px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-text h1 {
+    font-size: 32px !important;
+    line-height: 1.22 !important;
+  }
+  
+  .hero-feature-img {
+    height: 270px !important;
+  }
+  
+  .hero-feature-badge strong {
+    font-size: 13px !important;
+  }
+}
+
