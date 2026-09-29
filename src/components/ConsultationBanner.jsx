@@ -32,9 +32,9 @@ export default function ConsultationBanner() {
 
       <form onSubmit={handleSubmit}>
         {submitted ? (
-          <div style={{ color: '#fff', background: 'rgba(0, 154, 78, 0.95)', padding: '20px', borderRadius: '8px', textAlign: 'center' }}>
+          <div style={{ color: '#fff', background: '#005296', border: '1px solid #e87713', padding: '20px', borderRadius: '8px', textAlign: 'center' }}>
             <h5 style={{ color: '#fff', margin: 0 }}>✓ Request Received!</h5>
-            <p style={{ color: '#fff', fontSize: '14px', margin: '6px 0 0 0' }}>Our technical engineering team will reach out to you shortly.</p>
+            <p style={{ color: '#e0e7ff', fontSize: '14px', margin: '6px 0 0 0' }}>Our technical engineering team will reach out to you shortly.</p>
           </div>
         ) : (
           <>

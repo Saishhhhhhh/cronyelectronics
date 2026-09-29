@@ -29,7 +29,7 @@ export default function ScrollToTop() {
       onClick={scrollToTop}
       style={{
         display: isVisible ? 'grid' : 'none',
-        background: `conic-gradient(#009a4e ${scrollProgress}%, #fff ${scrollProgress}%)`,
+        background: `conic-gradient(#e87713 ${scrollProgress}%, #fff ${scrollProgress}%)`,
         cursor: 'pointer',
       }}
     >

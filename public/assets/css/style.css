@@ -98,8 +98,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --theme-colour: #FFC80B;
-    --common-colour: #009A4E;
+    --theme-colour: #e87713; /* Crony Logo Orange - replaces yellow */
+    --common-colour: #005296; /* Crony Logo Royal Blue */
+    --crony-orange: #e87713;
+    --crony-blue: #005296;
 }
 
 body {
@@ -1041,7 +1043,7 @@ button.close-search i {
     z-index: 0;
     border: 0;
     right: 0;
-    color: #000;
+    color: #fff;
     background-color: var(--theme-colour);
     transition: .4s all;
 }
@@ -1384,13 +1386,13 @@ span#progress-value i {
     margin-bottom: 23px;
     width: 100px;
     height: 100px;
-    background-color: #009a4e;
+    background-color: #005296;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     border: 5px solid #fff;
-    outline: 3px solid #ffcc12;
+    outline: 3px solid #e87713;
     margin-top: -45px;
     color: #fff;
 }
@@ -1607,7 +1609,7 @@ ul.list-style li:before {
     font-weight: 900;
     font-size: 220px;
     bottom: -24%;
-    color: #009A4E30;
+    color: rgba(232, 119, 19, 0.15);
     line-height: 220px;
 }
 /* 18. heading.two */
@@ -2052,7 +2054,7 @@ footer:before {
     top: 0;
     width: 16%;
     height: 100%;
-    background-color: #009a4e;
+    background-color: var(--common-colour);
     right: 100%;
     z-index: -2;
 }
@@ -2099,7 +2101,7 @@ footer:before {
     align-items: center;
 }
 .get-in-touch svg {
-    fill: #ffee02;
+    fill: #ffffff;
     height: auto;
 }
 .get-in-touch i {
@@ -2176,7 +2178,7 @@ ul.recent-news li figure {
     display: flex;
 }
 .footer-bottom-text a,.footer-bottom-text span{
-    color: #ffee02;
+    color: #e87713;
 }
 .footer-bottom-text ul a {
     text-transform: capitalize;
@@ -2233,7 +2235,7 @@ header.two a.btn:hover:before {
 }
 .hero-section-two .hero-text span {
     font-weight: 900;
-    color: #009a4e;
+    color: var(--theme-colour);
     font-size: 18px;
     padding-bottom: 16px;
     display: block;
@@ -2620,7 +2622,7 @@ ul.social-media {
 }
 .pricing-plan-top {
     padding: 50px;
-    border: 6px solid #ffc80b;
+    border: 6px solid #e87713;
     background-color: #fff;
     position: relative;
     width: 95%;
@@ -2860,12 +2862,11 @@ ul.social-media {
     height: 54px;
     transform: translateY(-50%);
     left: 13px;
-    background-color: white;
-    background-color: #feda46;
+    background-color: #e87713;
 }
 .accordion-item.active .title {
     color: #000;
-    border-color: #feda46;
+    border-color: #e87713;
 }
 .accordion-item .icon:before, .accordion-item .icon:after {
     content: "";
@@ -2920,14 +2921,14 @@ ul.social-media {
     color: black;
 }
 .accordion-item.active .icon {
-    background-color: #009a4e;
+    background-color: #005296;
 }
 .accordion-item {
     border: 1px solid #999999;
     background-color: #fff;
 }
 .accordion-item.active {
-    border: 1px solid #feda46;
+    border: 1px solid #e87713;
 }
 .accordion-item:last-of-type {
     border-bottom-right-radius: 0;
@@ -4251,13 +4252,13 @@ ul.list {
     font-size: 44px;
     width: 100px;
     height: 100px;
-    background-color: #009a4e;
+    background-color: #005296;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     border: 5px solid #fff;
-    outline: 3px solid #ffcc12;
+    outline: 3px solid #e87713;
     color: #fff;
 }
 .services-details h3 {

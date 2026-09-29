@@ -76,7 +76,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedProduct }) {
         </button>
 
         <div style={{ marginBottom: '20px' }}>
-          <span style={{ color: '#009a4e', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+          <span style={{ color: '#e87713', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
             Crony Electronics Pvt Ltd
           </span>
           <h3 style={{ fontSize: '24px', fontWeight: 800, marginTop: '5px', color: '#111' }}>
@@ -88,10 +88,10 @@ export default function QuoteModal({ isOpen, onClose, preselectedProduct }) {
         </div>
 
         {submitted ? (
-          <div style={{ background: '#e8f5e9', border: '1px solid #c8e6c9', padding: '25px', borderRadius: '8px', textAlign: 'center' }}>
-            <div style={{ fontSize: '40px', color: '#009a4e', marginBottom: '10px' }}>✓</div>
-            <h4 style={{ color: '#1b5e20', margin: 0 }}>Proposal Request Submitted!</h4>
-            <p style={{ color: '#2e7d32', fontSize: '14px', marginTop: '8px' }}>
+          <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', padding: '25px', borderRadius: '8px', textAlign: 'center' }}>
+            <div style={{ fontSize: '40px', color: '#005296', marginBottom: '10px' }}>✓</div>
+            <h4 style={{ color: '#005296', margin: 0 }}>Proposal Request Submitted!</h4>
+            <p style={{ color: '#475569', fontSize: '14px', marginTop: '8px' }}>
               Thank you for reaching out to Crony Electronics. Our technical engineering division will review your inquiry and contact you within 24 hours.
             </p>
           </div>
@@ -189,7 +189,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedProduct }) {
               className="btn"
               style={{
                 width: '100%',
-                background: '#009a4e',
+                background: '#e87713',
                 color: '#fff',
                 padding: '14px',
                 fontSize: '16px',

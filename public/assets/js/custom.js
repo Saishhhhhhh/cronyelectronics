@@ -259,7 +259,7 @@ $(function() {
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
-  scrollProgress.style.background = `conic-gradient(#009a4e ${scrollValue}%, #fff ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(#e87713 ${scrollValue}%, #fff ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;
@@ -449,7 +449,7 @@ window.onload = calcScrollValue;
             thickness: 10,
             emptyFill: "rgba(250,250,250, .0)",
             fill: {
-              color: '#009A4E'
+              color: '#e87713'
             }
           }).on('circle-animation-progress', function (event, progress, stepValue) {
             $(this).find('div').text((stepValue*100).toFixed() + "%");

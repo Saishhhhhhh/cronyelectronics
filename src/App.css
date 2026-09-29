@@ -258,7 +258,7 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 2.2px !important;
-  color: #ffcc12 !important; /* Theme gold */
+  color: #e87713 !important; /* Crony Logo Orange */
   margin-bottom: 16px !important;
   background: none !important;
   border: none !important;
@@ -299,14 +299,14 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 }
 
 .hero-btn-primary {
-  background: #ffcc12 !important;
-  color: #0c192c !important;
+  background: #e87713 !important;
+  color: #ffffff !important;
   font-weight: 700 !important;
   font-size: 15px !important;
   padding: 13px 28px !important;
   border-radius: 6px !important;
-  border: 2px solid #ffcc12 !important;
-  box-shadow: 0 6px 22px rgba(255, 204, 18, 0.35) !important;
+  border: 2px solid #e87713 !important;
+  box-shadow: 0 6px 22px rgba(232, 119, 19, 0.4) !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
@@ -315,11 +315,11 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 }
 
 .hero-btn-primary:hover {
-  background: #009a4e !important;
-  border-color: #009a4e !important;
+  background: #005296 !important;
+  border-color: #005296 !important;
   color: #ffffff !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(0, 154, 78, 0.4) !important;
+  box-shadow: 0 8px 25px rgba(0, 82, 150, 0.4) !important;
 }
 
 .hero-btn-secondary {
@@ -341,7 +341,7 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 .hero-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.22) !important;
   border-color: rgba(255, 255, 255, 0.6) !important;
-  color: #ffcc12 !important;
+  color: #e87713 !important;
   transform: translateY(-2px) !important;
 }
 
@@ -397,11 +397,11 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 
 .hero-one-slider .swiper-button-prev:hover,
 .hero-one-slider .swiper-button-next:hover {
-  background: #009a4e !important;
-  border-color: #009a4e !important;
+  background: #e87713 !important;
+  border-color: #e87713 !important;
   color: #ffffff !important;
   transform: scale(1.1) !important;
-  box-shadow: 0 6px 20px rgba(0, 154, 78, 0.5) !important;
+  box-shadow: 0 6px 20px rgba(232, 119, 19, 0.5) !important;
 }
 
 /* Modern Swiper Pagination Dots */
@@ -432,8 +432,8 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 .swiper.hero-one-slider .swiper-pagination span.swiper-pagination-bullet-active {
   width: 32px !important;
   border-radius: 6px !important;
-  background: #ffcc12 !important;
-  box-shadow: 0 0 12px rgba(255, 204, 18, 0.8) !important;
+  background: #e87713 !important;
+  box-shadow: 0 0 12px rgba(232, 119, 19, 0.8) !important;
 }
 
 /* 3. Section Headings (Prevents 55px blown-out titles) */
@@ -530,7 +530,7 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 .services-slider .services:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
-  border-color: #009a4e !important;
+  border-color: #e87713 !important;
 }
 
 .services-slider .services h3 a {
@@ -573,22 +573,22 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
   width: 50px !important;
   height: 50px !important;
   border-radius: 50% !important;
-  background-color: #009a4e !important;
+  background-color: #005296 !important;
   color: #ffffff !important;
   border: none !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   cursor: pointer !important;
-  box-shadow: 0 4px 14px rgba(0, 154, 78, 0.25) !important;
+  box-shadow: 0 4px 14px rgba(0, 82, 150, 0.25) !important;
   transition: all 0.25s ease-in-out !important;
 }
 
 .services-nav-btn:hover {
-  background-color: #FFC80B !important;
-  color: #000000 !important;
+  background-color: #e87713 !important;
+  color: #ffffff !important;
   transform: scale(1.08) !important;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 6px 18px rgba(232, 119, 19, 0.3) !important;
 }
 
 .services-nav-btn i {
@@ -628,7 +628,7 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 .services-slider .services:hover {
   transform: translateY(-5px) !important;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important;
-  border-color: #009a4e !important;
+  border-color: #e87713 !important;
 }
 
 .services-slider .services h3 a {
@@ -769,24 +769,24 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 
 #v-pills-tab .nav-link:hover,
 .process-tabs-wrapper .nav-link:hover {
-  border-color: #009a4e !important;
+  border-color: #e87713 !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 6px 18px rgba(232, 119, 19, 0.15) !important;
 }
 
 #v-pills-tab .nav-link.active,
 .process-tabs-wrapper .nav-link.active {
-  background-color: #009a4e !important;
+  background-color: #005296 !important;
   color: #ffffff !important;
-  border-color: #009a4e !important;
-  box-shadow: 0 8px 24px rgba(0, 154, 78, 0.3) !important;
+  border-color: #005296 !important;
+  box-shadow: 0 8px 24px rgba(0, 82, 150, 0.3) !important;
   transform: translateY(-2px) !important;
 }
 
 #v-pills-tab .nav-link span,
 .process-tabs-wrapper .nav-link span {
-  background-color: #FFC80B !important;
-  color: #000000 !important;
+  background-color: #e87713 !important;
+  color: #ffffff !important;
   width: 60px !important;
   height: 60px !important;
   display: flex !important;
@@ -801,8 +801,8 @@ html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:
 
 #v-pills-tab .nav-link.active span,
 .process-tabs-wrapper .nav-link.active span {
-  background-color: #FFC80B !important;
-  color: #000000 !important;
+  background-color: #e87713 !important;
+  color: #ffffff !important;
 }
 
 .research-analysis h3 {
@@ -942,7 +942,7 @@ footer {
   font-weight: 800 !important;
   text-transform: uppercase !important;
   letter-spacing: 2px !important;
-  color: #009a4e !important;
+  color: #e87713 !important;
   margin-bottom: 8px !important;
   background: transparent !important;
   border: none !important;
@@ -975,7 +975,7 @@ footer {
 }
 
 .crony-about-heading .highlight-accent {
-  color: #009a4e;
+  color: #e87713;
   display: inline;
 }
 
@@ -1006,7 +1006,7 @@ footer {
 }
 
 .crony-clean-list li i.fa-circle-check {
-  color: #009a4e;
+  color: #005296;
   font-size: 18px;
   margin-top: 3px;
   flex-shrink: 0;
@@ -1035,7 +1035,7 @@ footer {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #009a4e;
+  color: #e87713;
 }
 
 .trust-names {
@@ -1089,7 +1089,7 @@ footer {
 }
 
 .crony-explore-btn {
-  background: #009a4e;
+  background: #005296;
   color: #ffffff !important;
   font-size: 14px !important;
   font-weight: 700 !important;
@@ -1100,12 +1100,12 @@ footer {
   align-items: center;
   gap: 6px;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(0, 154, 78, 0.25);
+  box-shadow: 0 4px 14px rgba(0, 82, 150, 0.25);
 }
 
 .crony-explore-btn:hover {
-  background: #ffcc12;
-  color: #0c192c !important;
+  background: #e87713;
+  color: #ffffff !important;
   transform: translateY(-2px);
 }
 
@@ -1186,13 +1186,13 @@ footer {
 }
 
 .crony-toggle-label.is-active-heat {
-  color: #ef4444;
+  color: #e87713;
   font-weight: 800;
   transform: scale(1.04);
 }
 
 .crony-toggle-label.is-active-cool {
-  color: #009a4e;
+  color: #005296;
   font-weight: 800;
   transform: scale(1.04);
 }
@@ -1213,13 +1213,13 @@ footer {
 }
 
 .crony-switch-track.track-heat {
-  background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
-  box-shadow: 0 5px 18px rgba(239, 68, 68, 0.45);
+  background: linear-gradient(135deg, #e87713 0%, #f97316 100%);
+  box-shadow: 0 5px 18px rgba(232, 119, 19, 0.45);
 }
 
 .crony-switch-track.track-cool {
-  background: linear-gradient(135deg, #009a4e 0%, #06b6d4 100%);
-  box-shadow: 0 5px 18px rgba(0, 154, 78, 0.45);
+  background: linear-gradient(135deg, #005296 0%, #0284c7 100%);
+  box-shadow: 0 5px 18px rgba(0, 82, 150, 0.45);
 }
 
 .crony-switch-thumb {

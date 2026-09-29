@@ -28,7 +28,7 @@ export default function Testimonials() {
                   onClick={() => setActiveSlide(idx)}
                   style={{
                     display: 'inline-block',
-                    border: activeSlide === idx ? '3px solid #009a4e' : '2px solid transparent',
+                    border: activeSlide === idx ? '3px solid #e87713' : '2px solid transparent',
                     borderRadius: '50%',
                     padding: '2px',
                     transition: 'all 0.3s ease',
@@ -46,11 +46,11 @@ export default function Testimonials() {
             <div className="customer">
               <h5>Customer satisfaction and quantifiable ROI drive our business</h5>
               <ul className="star">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
+                <li><i className="fa-solid fa-star" style={{ color: '#e87713' }}></i></li>
+                <li><i className="fa-solid fa-star" style={{ color: '#e87713' }}></i></li>
+                <li><i className="fa-solid fa-star" style={{ color: '#e87713' }}></i></li>
+                <li><i className="fa-solid fa-star" style={{ color: '#e87713' }}></i></li>
+                <li><i className="fa-solid fa-star" style={{ color: '#e87713' }}></i></li>
               </ul>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function Testimonials() {
                 </p>
                 <ul style={{ marginTop: '25px', listStyle: 'none', padding: 0 }}>
                   <li><h3 style={{ fontSize: '20px', fontWeight: 700, color: '#000' }}>{current.author}</h3></li>
-                  <li><h5 style={{ fontSize: '15px', color: '#009a4e', fontWeight: 600, marginTop: '4px' }}>{current.company}</h5></li>
+                  <li><h5 style={{ fontSize: '15px', color: '#005296', fontWeight: 600, marginTop: '4px' }}>{current.company}</h5></li>
                 </ul>
               </div>
             </div>

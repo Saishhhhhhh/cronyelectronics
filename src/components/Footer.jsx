@@ -29,7 +29,7 @@ export default function Footer({ onOpenQuote }) {
                   </div>
                   <div>
                     <h4 style={{ color: '#fff', fontSize: '18px', fontWeight: 800, margin: 0, letterSpacing: '0.5px' }}>CRONY ELECTRONICS</h4>
-                    <span style={{ color: '#FFC80B', fontSize: '11px', fontWeight: 600, letterSpacing: '0.8px', textTransform: 'uppercase' }}>Private Limited • Est. 1993</span>
+                    <span style={{ color: '#e87713', fontSize: '11px', fontWeight: 600, letterSpacing: '0.8px', textTransform: 'uppercase' }}>Private Limited • Est. 1993</span>
                   </div>
                 </div>
                 <p>
@@ -43,7 +43,7 @@ export default function Footer({ onOpenQuote }) {
                 <h3>Industrial Updates & Audits</h3>
                 <p>Stay informed with our latest energy-saving breakthroughs, case studies, and engineering innovations.</p>
                 {subscribed ? (
-                  <div style={{ background: '#009a4e', color: '#fff', padding: '12px 20px', borderRadius: '4px', fontWeight: 600 }}>
+                  <div style={{ background: '#005296', color: '#fff', padding: '12px 20px', borderRadius: '4px', fontWeight: 600 }}>
                     ✓ Thank you for subscribing! We will keep you updated.
                   </div>
                 ) : (
@@ -174,7 +174,7 @@ export default function Footer({ onOpenQuote }) {
                   type="button" 
                   onClick={onOpenQuote}
                   className="btn" 
-                  style={{ background: '#009a4e', color: '#fff', width: '100%', textAlign: 'center', border: 'none' }}
+                  style={{ background: '#e87713', color: '#fff', width: '100%', textAlign: 'center', border: 'none' }}
                 >
                   Schedule Facility Energy Audit
                 </button>
