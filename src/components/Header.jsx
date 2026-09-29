@@ -90,10 +90,10 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
                 </div>
 
                 <a 
-                  href="javascript:void(0)" 
+                  href="#menu" 
                   id="desktop-menu" 
                   className={`menu-start ${isDesktopMenuOpen ? 'open' : ''}`}
-                  onClick={() => setIsDesktopMenuOpen(!isDesktopMenuOpen)}
+                  onClick={(e) => { e.preventDefault(); setIsDesktopMenuOpen(!isDesktopMenuOpen); }}
                 >
                   <svg id="ham-menue" viewBox="0 0 100 100">
                     <path className="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
@@ -103,7 +103,7 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
                 </a>
 
                 <div className="header-search-button search-box-outer" onClick={onOpenSearch}>
-                  <a href="javascript:void(0)" className="search-btn">
+                  <a href="#search" className="search-btn" onClick={(e) => e.preventDefault()}>
                     <i className="flaticon-magnifying-glass"></i>
                   </a>
                 </div>
@@ -136,7 +136,7 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
               <a href="#about" onClick={() => setIsMobileNavOpen(false)}>About</a>
             </li>
             <li className={`menu-item-has-children ${mobileSubmenu === 'products' ? 'active' : ''}`}>
-              <a href="javascript:void(0)" onClick={() => toggleMobileSubmenu('products')}>
+              <a href="#services-dropdown" onClick={(e) => { e.preventDefault(); toggleMobileSubmenu('products'); }}>
                 Services
               </a>
               <ul className="sub-menu" style={{ display: mobileSubmenu === 'products' ? 'block' : 'none' }}>
@@ -161,7 +161,7 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
               <a href="#contact" onClick={() => setIsMobileNavOpen(false)}>Contact</a>
             </li>
           </ul>
-          <a href="javascript:void(0)" id="res-cross" onClick={() => setIsMobileNavOpen(false)}></a>
+          <a href="#close" id="res-cross" onClick={(e) => { e.preventDefault(); setIsMobileNavOpen(false); }}></a>
         </div>
 
         {/* Desktop Sidebar Drawer */}

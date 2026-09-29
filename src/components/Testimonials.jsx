@@ -24,8 +24,8 @@ export default function Testimonials() {
                 <a
                   key={idx}
                   className={`next-slide ${activeSlide === idx ? 'nav-active' : ''}`}
-                  href="javascript:void(0)"
-                  onClick={() => setActiveSlide(idx)}
+                  href="#testimonial"
+                  onClick={(e) => { e.preventDefault(); setActiveSlide(idx); }}
                   style={{
                     display: 'inline-block',
                     border: activeSlide === idx ? '3px solid #e87713' : '2px solid transparent',
