@@ -333,116 +333,195 @@ header .phone a:hover {
   font-size: 14px !important;
 }
 
-/* 5. Services Infinite Carousel */
+/* ========================================================
+   5. Best-In-Class Industrial Products & Engineering Showcase
+   ======================================================== */
 .services-carousel-section {
-  padding-top: 50px !important;
-  padding-bottom: 60px !important;
-  background: #fbfbfb;
-  overflow: hidden;
-}
-
-.services-slider {
-  padding-top: 35px !important;
-  padding-bottom: 75px !important;
+  padding-top: 60px !important;
+  padding-bottom: 80px !important;
+  background: #f8fafc !important;
+  border-top: 1px solid #edf2f7 !important;
+  border-bottom: 1px solid #edf2f7 !important;
   position: relative !important;
   overflow: hidden !important;
 }
 
-.services-slider .swiper-slide {
-  height: auto !important;
-  display: flex !important;
+/* Kill legacy template dark blackout overlay */
+.services:before,
+.crony-product-card:before {
+  display: none !important;
+  content: none !important;
 }
 
-.services-slider .services {
-  width: 100% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  margin-top: 25px !important;
-  margin-bottom: 25px !important;
-  padding: 0 35px !important;
-  background: #fff !important;
-  min-height: 460px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  border: 1px solid #dcdcdc !important;
-  transition: all 0.3s ease;
-}
-
-.services-slider .services:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
-  border-color: #e87713 !important;
-}
-
-.services-slider .services h3 a {
-  font-size: 20px !important;
-  line-height: 1.3 !important;
-}
-
-.services-slider .services p {
-  font-size: 14px !important;
-  line-height: 23px !important;
-  padding-top: 8px !important;
-  padding-bottom: 16px !important;
-  color: #555;
-}
-
-.services-section-header {
+/* Header Section */
+.crony-services-header {
   display: flex !important;
   justify-content: space-between !important;
   align-items: flex-end !important;
-  margin-bottom: 25px !important;
+  gap: 24px !important;
   flex-wrap: wrap !important;
-  gap: 20px !important;
-  position: relative !important;
-  z-index: 5 !important;
+  margin-bottom: 24px !important;
 }
 
-.services-section-header .heading.two {
+.crony-services-header-text {
   max-width: 720px !important;
+}
+
+.crony-services-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 6px 14px !important;
+  background: rgba(232, 119, 19, 0.08) !important;
+  border: 1px solid rgba(232, 119, 19, 0.22) !important;
+  border-radius: 20px !important;
+  color: #e87713 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+}
+
+.crony-spark-icon {
+  display: flex !important;
+  align-items: center !important;
+  color: #e87713 !important;
+}
+
+.crony-services-title {
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  color: #0a1628 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.crony-services-subtitle {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #64748b !important;
   margin: 0 !important;
 }
 
-.services-nav-controls {
+/* Controls & Live Slide Counter */
+.crony-services-controls {
   display: flex !important;
   align-items: center !important;
-  gap: 12px !important;
-  padding-bottom: 8px !important;
+  gap: 16px !important;
+  padding-bottom: 6px !important;
 }
 
-.services-nav-btn {
-  width: 50px !important;
-  height: 50px !important;
-  border-radius: 50% !important;
-  background-color: #005296 !important;
-  color: #ffffff !important;
-  border: none !important;
+.crony-slide-counter {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 4px !important;
+  font-family: monospace, sans-serif !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 8px 14px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
+}
+
+.crony-slide-counter .counter-curr {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #005296 !important;
+}
+
+.crony-slide-counter .counter-divider {
+  font-size: 14px !important;
+  color: #94a3b8 !important;
+}
+
+.crony-slide-counter .counter-max {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #64748b !important;
+}
+
+.crony-nav-arrows {
+  display: flex !important;
+  gap: 8px !important;
+}
+
+.crony-nav-btn {
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 12px !important;
+  background-color: #ffffff !important;
+  color: #005296 !important;
+  border: 1.5px solid #dbeafe !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   cursor: pointer !important;
-  box-shadow: 0 4px 14px rgba(0, 82, 150, 0.25) !important;
-  transition: all 0.25s ease-in-out !important;
+  font-size: 16px !important;
+  box-shadow: 0 4px 10px rgba(0, 82, 150, 0.08) !important;
+  transition: all 0.25s ease !important;
 }
 
-.services-nav-btn:hover {
+.crony-nav-btn:hover {
   background-color: #e87713 !important;
+  border-color: #e87713 !important;
   color: #ffffff !important;
-  transform: scale(1.08) !important;
-  box-shadow: 0 6px 18px rgba(232, 119, 19, 0.3) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(232, 119, 19, 0.3) !important;
 }
 
-.services-nav-btn i {
-  font-size: 18px !important;
-  color: inherit !important;
+/* Category Filter Tabs */
+.crony-category-filter-wrap {
+  margin: 12px 0 24px 0 !important;
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+  padding-bottom: 4px !important;
 }
 
+.crony-category-filter-wrap::-webkit-scrollbar {
+  display: none !important;
+}
+
+.crony-category-filter-bar {
+  display: inline-flex !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+}
+
+.crony-cat-btn {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+.crony-cat-btn:hover {
+  border-color: #005296 !important;
+  color: #005296 !important;
+  background: #f0f7ff !important;
+}
+
+.crony-cat-btn.active {
+  background: #005296 !important;
+  border-color: #005296 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 82, 150, 0.25) !important;
+}
+
+/* Swiper Slider Layout */
 .services-slider {
-  padding-top: 25px !important;
-  padding-bottom: 60px !important;
+  padding-top: 10px !important;
+  padding-bottom: 30px !important;
   position: relative !important;
   overflow: hidden !important;
-  margin-top: 5px !important;
 }
 
 .services-slider .swiper-slide {
@@ -450,61 +529,340 @@ header .phone a:hover {
   display: flex !important;
 }
 
-.services-slider .services {
+/* Product Card Engineered Industrial Architecture */
+.crony-product-card {
   width: 100% !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  padding: 20px 20px 18px !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
-  margin-top: 25px !important;
-  margin-bottom: 25px !important;
-  padding: 0 32px !important;
-  background: #ffffff !important;
-  min-height: 480px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important;
-  border: 1px solid #e2e2e2 !important;
-  border-radius: 6px !important;
-  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
 }
 
-.services-slider .services:hover {
-  transform: translateY(-5px) !important;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important;
+.crony-product-card::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #005296 0%, #e87713 100%) !important;
+  opacity: 0.6 !important;
+  transition: opacity 0.3s ease, height 0.3s ease !important;
+}
+
+.crony-product-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 30, 80, 0.12) !important;
   border-color: #e87713 !important;
 }
 
-.services-slider .services h3 a {
-  font-size: 20px !important;
+.crony-product-card:hover::after {
+  opacity: 1 !important;
+  height: 4px !important;
+}
+
+/* Card Topbar */
+.crony-card-topbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 12px !important;
+}
+
+.crony-card-cat-badge {
+  background: rgba(0, 82, 150, 0.08) !important;
+  color: #005296 !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+}
+
+.crony-card-serial {
+  font-family: monospace, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #94a3b8 !important;
+}
+
+/* Image Showcase Frame */
+.crony-card-image-box {
+  position: relative !important;
+  height: 190px !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background: #f1f5f9 !important;
+}
+
+.crony-card-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.crony-card-image-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(10, 22, 40, 0.02) 20%, rgba(10, 22, 40, 0.72) 100%) !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+.crony-product-card:hover .crony-card-img {
+  transform: scale(1.08) !important;
+}
+
+/* Floating Spec Ribbon on Image */
+.crony-card-spec-ribbon {
+  position: absolute !important;
+  bottom: 8px !important;
+  left: 8px !important;
+  right: 8px !important;
+  background: rgba(10, 22, 40, 0.88) !important;
+  backdrop-filter: blur(4px) !important;
+  color: #ffffff !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  padding: 6px 10px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  z-index: 2 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.crony-card-spec-ribbon i {
+  color: #e87713 !important;
+  font-size: 11px !important;
+  flex-shrink: 0 !important;
+}
+
+.crony-card-spec-ribbon span {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* Floating Squircle Icon */
+.crony-card-icon-badge {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 10px !important;
+  background: #005296 !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 2 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+}
+
+.crony-card-icon-badge i {
+  font-size: 19px !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  display: block !important;
+}
+
+.crony-product-card:hover .crony-card-icon-badge {
+  background: #e87713 !important;
+  transform: scale(1.08) !important;
+}
+
+/* Content Body */
+.crony-card-body {
+  padding-top: 16px !important;
+  flex-grow: 1 !important;
+}
+
+.crony-card-title {
+  margin: 0 0 8px 0 !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
   line-height: 1.35 !important;
+}
+
+.crony-card-title a {
+  color: #0a1628 !important;
+  text-decoration: none !important;
+  transition: color 0.25s ease !important;
   display: -webkit-box !important;
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
-  min-height: 54px !important;
-  color: #111111 !important;
+  min-height: 52px !important;
 }
 
-.services-slider .services p {
-  font-size: 14px !important;
-  line-height: 24px !important;
-  color: #555555 !important;
+.crony-product-card:hover .crony-card-title a {
+  color: #e87713 !important;
+}
+
+.crony-card-desc {
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #64748b !important;
+  margin: 0 !important;
   display: -webkit-box !important;
   -webkit-line-clamp: 3 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
-  min-height: 72px !important;
-  padding-top: 6px !important;
-  padding-bottom: 12px !important;
+  min-height: 62px !important;
 }
 
-.services-slider .services > img {
-  width: calc(100% + 64px) !important;
-  height: 180px !important;
-  object-fit: cover !important;
+/* Card Action Footer */
+.crony-card-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-top: 14px !important;
+  margin-top: 12px !important;
+  border-top: 1px solid #f1f5f9 !important;
+}
+
+.crony-card-action-label {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #005296 !important;
+  transition: color 0.25s ease !important;
+}
+
+.crony-product-card:hover .crony-card-action-label {
+  color: #e87713 !important;
+}
+
+.crony-card-action-btn {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #005296 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+}
+
+.crony-card-action-btn svg {
   display: block !important;
-  margin-left: -32px !important;
-  margin-bottom: -48px !important;
-  border-bottom-left-radius: 6px !important;
-  border-bottom-right-radius: 6px !important;
+  color: #005296 !important;
+  stroke: #005296 !important;
+  transition: all 0.25s ease !important;
+}
+
+.crony-product-card:hover .crony-card-action-btn {
+  background: #e87713 !important;
+  border-color: #e87713 !important;
+  transform: translate(2px, -2px) !important;
+}
+
+.crony-product-card:hover .crony-card-action-btn svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Nav Arrows SVG */
+.crony-nav-btn svg {
+  display: block !important;
+  color: #005296 !important;
+  stroke: #005296 !important;
+  transition: all 0.25s ease !important;
+}
+
+.crony-nav-btn:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.crony-nav-btn.services-slider-prev:hover svg {
+  transform: translateX(-2px) !important;
+}
+
+.crony-nav-btn.services-slider-next:hover svg {
+  transform: translateX(2px) !important;
+}
+
+/* Bottom Industrial Trust Strip */
+.crony-trust-strip {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 40px !important;
+  padding: 24px 28px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03) !important;
+}
+
+.crony-trust-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 14px !important;
+}
+
+.crony-trust-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 10px !important;
+  background: rgba(232, 119, 19, 0.09) !important;
+  color: #e87713 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.crony-trust-icon i {
+  font-size: 20px !important;
+  color: #e87713 !important;
+  line-height: 1 !important;
+}
+
+.crony-trust-info h4 {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #0a1628 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.crony-trust-info p {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: #64748b !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .crony-services-title {
+    font-size: 28px !important;
+  }
+  .crony-trust-strip {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
 }
 
 /* 6. Working Process Tabs - Perfectly Centered & Non-Overlapping */
