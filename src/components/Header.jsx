@@ -20,28 +20,21 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
               <div>
                 <div className="phone-data">
                   <div className="phone">
-                    <i className="flaticon-iphone"></i>
+                    <i className="fa-solid fa-phone"></i>
                     <span>Call:</span>
                     <a href={`tel:${cronyData.company.phone}`}>{cronyData.company.phone}</a>
                   </div>
                   <div className="phone d-flex align-items-center">
-                    <i>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.833313 12.7083C0.488135 12.7083 0.208313 12.9882 0.208313 13.3333C0.208313 13.6785 0.488135 13.9583 0.833313 13.9583H3.33331C3.67849 13.9583 3.95831 13.6785 3.95831 13.3333C3.95831 12.9882 3.67849 12.7083 3.33331 12.7083H0.833313Z" fill="black"/>
-                        <path d="M0.833313 15.2083C0.488135 15.2083 0.208313 15.4882 0.208313 15.8333C0.208313 16.1785 0.488135 16.4583 0.833313 16.4583H5.83331C6.17849 16.4583 6.45831 16.1785 6.45831 15.8333C6.45831 15.4882 6.17849 15.2083 5.83331 15.2083H0.833313Z" fill="black"/>
-                        <path d="M2.59071 4.24172L2.5 4.16667C2.757 3.81294 3.0305 3.55276 3.38422 3.29576C4.4795 2.5 6.04189 2.5 9.16667 2.5H10.8333C13.9581 2.5 15.5205 2.5 16.6157 3.29576C16.9695 3.55276 17.2214 3.78443 17.4784 4.13816L17.3737 4.24225L15.4505 6.16551C14.0491 7.56689 13.0416 8.5725 12.1726 9.23558C11.318 9.88758 10.6712 10.1491 9.99992 10.1491C9.3285 10.1491 8.68175 9.88758 7.82717 9.23558C6.95817 8.5725 5.95066 7.56689 4.54927 6.16551L2.92989 4.54612L2.59071 4.24172Z" fill="black"/>
-                        <path d="M1.66663 9.99999C1.66663 7.80006 1.66663 6.37454 1.94431 5.34122L2.06983 5.45388L3.69916 7.08319C5.05938 8.44341 6.12537 9.50941 7.06891 10.2293C8.03468 10.9662 8.94529 11.3991 9.99988 11.3991C11.0544 11.3991 11.965 10.9662 12.9308 10.2293C13.8743 9.50941 14.9403 8.44341 16.3005 7.08321L18.0528 5.3309C18.3333 6.36504 18.3333 7.79274 18.3333 9.99999C18.3333 13.1247 18.3333 14.6872 17.5375 15.7824C17.2805 16.1362 16.9695 16.4472 16.6157 16.7042C15.5205 17.5 13.958 17.5 10.8333 17.5H9.16663C7.97633 17.5 7.01273 17.5 6.2153 17.456C6.95166 17.2833 7.49996 16.6223 7.49996 15.8333C7.49996 14.9128 6.75377 14.1667 5.83329 14.1667H4.77699C4.9188 13.9215 4.99996 13.6369 4.99996 13.3333C4.99996 12.4128 4.25377 11.6667 3.33329 11.6667H1.67263C1.66663 11.1657 1.66663 10.6129 1.66663 9.99999Z" fill="black"/>
-                      </svg>
-                    </i>
-                    <span>Email: </span>
+                    <i className="fa-solid fa-envelope"></i>
+                    <span>Email:</span>
                     <a className="me-3" href={`mailto:${cronyData.company.email}`}>{cronyData.company.email}</a>
                   </div>
                 </div>
               </div>
               <div className="social-media-text">
-                <a href="#about"><i className="fa-solid fa-award"></i> Est. 1993</a>
+                <a href="#about"><i className="fa-solid fa-certificate"></i> Est. 1993</a>
                 <a href="#services"><i className="fa-solid fa-bolt"></i> 30+ Yrs Exp</a>
-                <a href="#clients"><i className="fa-solid fa-building"></i> 500+ Clients</a>
+                <a href="#clients"><i className="fa-solid fa-building-shield"></i> 500+ Clients</a>
               </div>
             </div>
           </div>
@@ -115,8 +108,9 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
                   </a>
                 </div>
                 
-                <button type="button" className="btn" onClick={onOpenQuote}>
-                  Request a Quote
+                <button type="button" className="crony-header-quote-btn" onClick={onOpenQuote}>
+                  <span>Request a Quote</span>
+                  <i className="fa-solid fa-arrow-right-long"></i>
                 </button>
               </div>
             </div>

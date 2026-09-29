@@ -22,30 +22,75 @@ export const cronyData = {
   heroSlides: [
     {
       id: 1,
-      badge: "30+ Years of Engineering Innovation",
+      badge: "Pioneering Industrial Innovation • Est. 1993",
+      titlePrefix: "Pioneering Intelligent",
+      titleHighlight: "Energy Saving Solutions",
+      titleSuffix: "Since 1993",
       title: "Pioneering Energy Saving Solutions Since 1993",
       description: "Empowering India's industrial leaders — ONGC, Indian Railways, L&T, and M&M — with proven digital HVAC energy savers, thermal coatings, and sustainable daylight systems.",
       linkText: "Discover Solutions",
       link: "#services",
       bgImage: "/assets/img/works/hero_hvac.jpg",
+      dockTitle: "HVAC Energy Savers",
+      dockSub: "Digital Algorithm",
+      telemetryHeader: "HVAC OPTIMIZATION TELEMETRY",
+      statValue: "Up to 30%",
+      statLabel: "Documented Energy Reduction",
+      statSub: "Dual Microprocessor Controller",
+      statPoints: [
+        "Eliminates Compressor Over-cycling",
+        "Zero Loss in Facility Air Cooling",
+        "Validated by India's Top Public Sectors"
+      ],
+      metricTag: "Tested Across 500+ Facilities"
     },
     {
       id: 2,
-      badge: "Solid State Precision Technology",
+      badge: "Solid-State Precision Technology",
+      titlePrefix: "Ultra-Fast 20ms",
+      titleHighlight: "Solid State VRP Safeguard",
+      titleSuffix: "Zero Machine Downtime",
       title: "Solid State VRP: 20ms Voltage Regulation",
       description: "One of the world's fastest solid-state voltage regulating devices (3 kVA to 360 kVA). Complete safeguarding for mission-critical industrial, laboratory, and automated machinery.",
       linkText: "Explore VRP Device",
       link: "#services",
       bgImage: "/assets/img/works/hero_power_vrp.jpg",
+      dockTitle: "Solid-State VRP",
+      dockSub: "20ms Voltage Control",
+      telemetryHeader: "VOLTAGE STABILIZER BENCHMARK",
+      statValue: "< 20 ms",
+      statLabel: "Microsecond Correction Speed",
+      statSub: "Solid-State Triac Switching (3–360 kVA)",
+      statPoints: [
+        "Zero Servo Motors or Moving Parts",
+        "Total Safeguard for CNCs & Robotics",
+        "Instant Transient Voltage Clamping"
+      ],
+      metricTag: "3 kVA to 360 kVA Standard"
     },
     {
       id: 3,
       badge: "World-Class Industrial Architecture",
+      titlePrefix: "German High-Tech",
+      titleHighlight: "nora® Rubber Floorings",
+      titleSuffix: "Cleanroom & Heavy Duty",
       title: "nora® German High-Performance Floorings",
       description: "Market leader in rubber floor coverings: Forklift-resistant up to 6 N/mm², ESD protection (ec/ed), ISO Class 3 Cleanroom certified with zero lifetime recoating required.",
       linkText: "View Rubber Floorings",
       link: "#services",
       bgImage: "/assets/img/works/hero_rubber_flooring.jpg",
+      dockTitle: "nora® Floorings",
+      dockSub: "German Industrial Rubber",
+      telemetryHeader: "INDUSTRIAL SURFACE SPECIFICATION",
+      statValue: "6 N/mm²",
+      statLabel: "Dynamic Forklift Load Bearing",
+      statSub: "ISO Class 3 Cleanroom & ESD Certified",
+      statPoints: [
+        "100% German Engineered Rubber",
+        "Zero Lifetime Waxing or Recoating",
+        "Extreme Chemical & Stain Resistance"
+      ],
+      metricTag: "Guaranteed Zero Lifetime Waxing"
     },
   ],
   products: [
