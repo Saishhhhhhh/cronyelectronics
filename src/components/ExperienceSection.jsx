@@ -9,13 +9,9 @@ export default function ExperienceSection() {
       <div className="container">
         {/* Section Header */}
         <div className="heading text-center crony-about-header-wrap">
-          <div className="crony-clean-subtitle-wrap">
-            <span className="crony-subtitle-dash"></span>
-            <span className="crony-clean-subtitle">
-              About Crony Electronics
-            </span>
-            <span className="crony-subtitle-dash"></span>
-          </div>
+          <span className="crony-clean-subtitle">
+            About Crony Electronics
+          </span>
           <h2 className="crony-clean-title">
             30+ Years of Energy Saving Excellence
           </h2>
