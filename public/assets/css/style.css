@@ -1066,10 +1066,10 @@ button.close-search i {
 }
 /* 08. hero-section-one */
 .hero-section-one {
-    padding-top: 75px;
+    padding-top: 150px;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    padding-bottom: 111px;
+    padding-bottom: 120px;
     background-position: center;
     background-size: cover;
 }
@@ -1081,10 +1081,11 @@ button.close-search i {
     transform: translateY(-20px); 
 } 
 .slick-active .hero-text h1, 
-.hero-section-one.swiper-slide.swiper-slide-active .hero-text h1 {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .8s;
+.hero-section-one.swiper-slide.swiper-slide-active .hero-text h1,
+.hero-section-one.swiper-slide.swiper-slide-duplicate-active .hero-text h1 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition-delay: .3s;
     transform: translateY(0);
 }
 .hero-two-slider span,
@@ -1097,10 +1098,11 @@ button.close-search i {
     margin-bottom: 0;
 } 
 .slick-active  span,
-.hero-section-one.swiper-slide-active .text {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 1.3s;
+.hero-section-one.swiper-slide-active .text,
+.hero-section-one.swiper-slide-duplicate-active .text {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition-delay: .5s;
     transform: translateX(0);
 }
 .slick-list.draggable {
@@ -1110,12 +1112,14 @@ button.close-search i {
 .link-box { 
     transform: scaleY(0);
     transition: all .5s ease;
-    transition-delay: 2s;
+    transition-delay: .7s;
     transform-origin: bottom; 
+    margin-bottom: 45px;
 }
 .hero-section-one.swiper-slide-active .link-box,
+.hero-section-one.swiper-slide-duplicate-active .link-box,
 .slick-active .link-box {
-    transform: scale(1);
+    transform: scale(1) !important;
 } 
 @keyframes fadeInOne {
   0% {
@@ -1187,11 +1191,16 @@ button.close-search i {
     text-align: center;
     position: relative;
     padding-top: 17px;
+    display: block !important;
 }
 .hero-img img {
     position: relative;
     padding-left: 30px;
     z-index: 1;
+    display: inline-block !important;
+    max-width: 100%;
+    height: auto;
+    filter: hue-rotate(-15deg) saturate(1.3);
 }
 .hero-text {
     position: relative;

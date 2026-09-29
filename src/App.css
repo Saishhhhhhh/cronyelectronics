@@ -228,6 +228,26 @@ header .phone a:hover {
 }
 
 /* 2. Hero Section: Uses original template styles from /assets/css/style.css */
+.hero-section-one {
+  padding-top: 150px !important;
+}
+
+@media (max-width: 991px) {
+  .hero-section-one {
+    padding-top: 130px !important;
+  }
+}
+
+.hero-img {
+  display: block !important;
+  text-align: center;
+}
+
+.hero-img img {
+  display: inline-block !important;
+  max-width: 100%;
+  height: auto;
+}
 
 /* 3. Section Headings (Prevents 55px blown-out titles) */
 .heading {
