@@ -23,7 +23,7 @@ export default function ExperienceSection() {
         </div>
 
         <div className="row align-items-center">
-          {/* Left Column: Authentic & Structured About Details */}
+          {/* Left Column: Clean Editorial Company Overview (No boxes, no borders, no pills) */}
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className="crony-about-left">
               <h3 className="crony-about-heading">
@@ -34,59 +34,49 @@ export default function ExperienceSection() {
                 For over three decades, <strong>Crony Electronics Pvt Ltd</strong> has engineered proven energy-saving and asset protection solutions. First introducing dedicated AC energy systems in 1994 and microprocessor digital controllers in 1997 with Eata Electronics, we help commercial facilities and industrial plants achieve verified reductions in electricity consumption.
               </p>
 
-              {/* 3 Core Industrial Pillars */}
-              <div className="crony-pillars-list">
-                <div className="crony-pillar-item">
-                  <div className="pillar-icon">
-                    <i className="flaticon-battery"></i>
+              {/* Clean Feature Points (No card frames, pure typography with icons) */}
+              <ul className="crony-clean-list">
+                <li>
+                  <i className="fa-solid fa-circle-check"></i>
+                  <div>
+                    <strong>Microprocessor AC Optimization:</strong> Co-developed digital controllers regulating HVAC compressors to cut power draw by 15% to 30% with zero cooling loss.
                   </div>
-                  <div className="pillar-text">
-                    <h4>Microprocessor AC Optimization</h4>
-                    <p>Co-developed digital controllers regulating HVAC compressors to cut power draw by 15% to 30% with zero cooling loss.</p>
+                </li>
+                <li>
+                  <i className="fa-solid fa-circle-check"></i>
+                  <div>
+                    <strong>Elastoclad Heat-Reflective Roof Barrier:</strong> Blocks up to 85% of solar infrared rays, reducing building surface temperatures by 10°C–12°C and lowering HVAC load.
                   </div>
-                </div>
+                </li>
+                <li>
+                  <i className="fa-solid fa-circle-check"></i>
+                  <div>
+                    <strong>20ms Solid-State Voltage Regulation (VRP):</strong> One of the world's fastest solid-state stabilizers (3 to 360 kVA), safeguarding sensitive automation, CNCs, and electronics.
+                  </div>
+                </li>
+              </ul>
 
-                <div className="crony-pillar-item">
-                  <div className="pillar-icon">
-                    <i className="flaticon-water-energy"></i>
-                  </div>
-                  <div className="pillar-text">
-                    <h4>Elastoclad Heat-Reflective Roof Barrier</h4>
-                    <p>Blocks up to 85% of solar infrared rays, reducing building surface temperatures by 10°C–12°C and lowering HVAC load.</p>
-                  </div>
-                </div>
-
-                <div className="crony-pillar-item">
-                  <div className="pillar-icon">
-                    <i className="flaticon-wind-energy"></i>
-                  </div>
-                  <div className="pillar-text">
-                    <h4>20ms Solid-State Voltage Regulation (VRP)</h4>
-                    <p>One of the world's fastest solid-state stabilizers (3 to 360 kVA), safeguarding sensitive automation, CNCs, and electronics.</p>
-                  </div>
-                </div>
+              {/* Trusted By Client Line (Natural text, no box) */}
+              <div className="crony-trust-line">
+                <span className="trust-prefix">Trusted Nationwide By:</span>
+                <span className="trust-names">ONGC • Indian Railways • L&T • Mahindra & Mahindra • Hindalco • Kirloskar</span>
               </div>
 
-              {/* Trusted By Client Bar */}
-              <div className="crony-trust-bar">
-                <span className="trust-bar-label">Trusted Across India By:</span>
-                <span className="trust-bar-clients">
-                  <strong>ONGC</strong> • <strong>Indian Railways</strong> • <strong>L&T</strong> • <strong>Mahindra</strong> • <strong>Hindalco</strong> • <strong>Kirloskar</strong>
-                </span>
-              </div>
-
-              {/* Director Endorsement Card */}
-              <div className="crony-director-card">
-                <img 
-                  src="/assets/img/works/director_maulik_shah.jpg" 
-                  alt={cronyData.company.director} 
-                  className="crony-director-avatar"
-                />
-                <div className="crony-director-meta">
-                  <h4>{cronyData.company.director}</h4>
-                  <span>Managing Director, {cronyData.company.shortName}</span>
-                  <img src="/assets/img/signature.png" alt="Signature" className="crony-signature-img" />
+              {/* Director Endorsement (Zero card border, natural author block) */}
+              <div className="crony-director-block">
+                <div className="crony-director-profile">
+                  <img 
+                    src="/assets/img/works/director_maulik_shah.jpg" 
+                    alt={cronyData.company.director} 
+                    className="crony-director-avatar"
+                  />
+                  <div className="crony-director-meta">
+                    <h4>{cronyData.company.director}</h4>
+                    <span>Managing Director, {cronyData.company.shortName}</span>
+                    <img src="/assets/img/signature.png" alt="Signature" className="crony-signature-img" />
+                  </div>
                 </div>
+
                 <a href="#services" className="crony-explore-btn">
                   Discover Solutions <i className="flaticon-right-up"></i>
                 </a>
