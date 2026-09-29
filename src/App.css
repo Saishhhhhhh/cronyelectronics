@@ -935,15 +935,39 @@ footer {
   overflow: hidden;
 }
 
-/* Clean Section Header (No Pill) */
+/* Clean Section Header (No Pill, High-End Precision Typography) */
+.crony-about-header-wrap {
+  width: 100% !important;
+  max-width: 960px !important;
+  margin: 0 auto 52px auto !important;
+  padding-bottom: 0 !important;
+}
+
+.crony-clean-subtitle-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.crony-subtitle-dash {
+  width: 36px;
+  height: 2px;
+  background: #e87713;
+  display: inline-block;
+  border-radius: 2px;
+}
+
 .crony-clean-subtitle {
-  display: block !important;
-  font-size: 14px !important;
+  display: inline-block !important;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 15px !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
-  letter-spacing: 2px !important;
+  letter-spacing: 3px !important;
   color: #e87713 !important;
-  margin-bottom: 8px !important;
+  margin: 0 !important;
   background: transparent !important;
   border: none !important;
   border-radius: 0 !important;
@@ -951,13 +975,15 @@ footer {
 }
 
 .crony-clean-title {
-  font-size: 42px !important;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 54px !important;
   font-weight: 800 !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.8px !important;
+  line-height: 1.15 !important;
+  letter-spacing: -1.6px !important;
   color: #0c192c !important;
-  max-width: 860px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto !important;
+  text-wrap: balance;
 }
 
 /* Left Column Styling */
@@ -1293,13 +1319,19 @@ footer {
 
 /* Responsive */
 @media (max-width: 991px) {
+  .crony-about-header-wrap {
+    margin-bottom: 36px !important;
+  }
+
   .crony-about-left {
     padding-right: 0;
     margin-bottom: 40px;
   }
   
   .crony-clean-title {
-    font-size: 32px !important;
+    font-size: 38px !important;
+    letter-spacing: -1px !important;
+    line-height: 1.2 !important;
   }
 
   .crony-about-heading {
@@ -1308,6 +1340,22 @@ footer {
   
   .crony-big-image-stage {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .crony-clean-title {
+    font-size: 30px !important;
+    letter-spacing: -0.6px !important;
+  }
+  
+  .crony-subtitle-dash {
+    width: 22px;
+  }
+  
+  .crony-clean-subtitle {
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
   }
 }
 

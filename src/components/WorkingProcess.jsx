@@ -49,7 +49,6 @@ export default function WorkingProcess() {
 
         {/* Section Heading */}
         <div className="heading">
-          <img src="/assets/img/heading-img.png" alt="img" />
           <span>Sustainable Working Process</span>
           <h2>Our Proven Implementation Framework</h2>
         </div>

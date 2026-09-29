@@ -8,15 +8,14 @@ export default function ExperienceSection() {
     <section className="gap crony-about-section" id="about">
       <div className="container">
         {/* Section Header */}
-        <div className="heading text-center" style={{ maxWidth: '850px', margin: '0 auto 42px auto' }}>
-          <img 
-            src="/assets/img/heading-img.png" 
-            alt="Crony Energy Saving Excellence" 
-            style={{ margin: '0 auto 14px auto', display: 'block' }} 
-          />
-          <span className="crony-clean-subtitle">
-            About Crony Electronics
-          </span>
+        <div className="heading text-center crony-about-header-wrap">
+          <div className="crony-clean-subtitle-wrap">
+            <span className="crony-subtitle-dash"></span>
+            <span className="crony-clean-subtitle">
+              About Crony Electronics
+            </span>
+            <span className="crony-subtitle-dash"></span>
+          </div>
           <h2 className="crony-clean-title">
             30+ Years of Energy Saving Excellence
           </h2>

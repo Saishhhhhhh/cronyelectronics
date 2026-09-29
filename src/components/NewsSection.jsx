@@ -6,7 +6,6 @@ export default function NewsSection() {
     <section className="gap" id="news">
       <div className="container">
         <div className="heading">
-          <img src="/assets/img/heading-img.png" alt="News" />
           <span>Technical Whitepapers & Insights</span>
           <h2>Energy Engineering Knowledge Center</h2>
         </div>
