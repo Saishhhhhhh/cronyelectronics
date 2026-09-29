@@ -51,8 +51,8 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
         <div className="bottom-bar">
           <div className="container">
             <div className="bottom-bar-text">
-              <a href="#">
-                <img src="/assets/img/logo.png" alt="Crony Electronics" />
+              <a href="#" className="crony-brand-header">
+                <img src="/cronylogo.png" alt="Crony Electronics" className="crony-brand-img" />
               </a>
 
               {/* Navigation Menu */}
@@ -130,8 +130,8 @@ export default function Header({ onOpenSearch, onOpenQuote }) {
           style={{ display: isMobileNavOpen ? 'block' : 'none' }}
         >
           <div className="res-log">
-            <a href="#">
-              <img src="/assets/img/logo.png" alt="Crony Electronics" className="white-logo" />
+            <a href="#" className="crony-brand-header">
+              <img src="/cronylogo.png" alt="Crony Electronics" className="crony-brand-img crony-mobile-logo" />
             </a>
           </div>
           <ul>

@@ -1,18 +1,75 @@
 /* ========================================================
-   CRONY ELECTRONICS - PROPORTIONAL SCALE & ALIGNMENT FIXES
-   Keeps exact template styling intact while preventing 
-   oversized fonts and wrapping issues on desktop screens.
+   CRONY ELECTRONICS - GLOBAL TYPOGRAPHY (RUBIK) & STYLING
    ======================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
+
+html, body, button, input, textarea, select, h1, h2, h3, h4, h5, h6, p, a, span:not([class*="flaticon-"]):not([class*="fa"]):not([class*="bullet"]), li, label, strong, b {
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}
 
 /* 1. Header & Menu Alignment */
 .bottom-bar-text {
   flex-wrap: nowrap;
 }
 
+/* Crony Brand Logo - Clean, Crisp White Card Presentation */
+.crony-brand-header {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: #ffffff !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.25s ease !important;
+  text-decoration: none !important;
+}
+
+.crony-brand-header:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.4) !important;
+}
+
+.crony-brand-img {
+  height: 44px !important;
+  max-height: 44px !important;
+  width: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
 .bottom-bar-text a img {
-  max-height: 46px;
+  max-height: 44px;
   width: auto;
   display: block;
+}
+
+/* Footer Logo Card */
+.footer-logo-card {
+  background: #ffffff !important;
+  padding: 5px 10px !important;
+  border-radius: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+}
+
+.footer-logo-img {
+  height: 44px !important;
+  width: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+/* Mobile Drawer Logo */
+.res-log {
+  padding: 20px 24px !important;
+  background: #08121e !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.crony-mobile-logo {
+  height: 42px !important;
+  width: auto !important;
 }
 
 .navbar-links {
@@ -864,6 +921,326 @@ footer {
   
   .hero-feature-badge strong {
     font-size: 13px !important;
+  }
+}
+
+/* ========================================================
+   11. CREATIVE ABOUT US & INTERACTIVE THERMAL DIFFERENCE
+   ======================================================== */
+.crony-about-section {
+  padding-top: 90px !important;
+  padding-bottom: 95px !important;
+  background: #ffffff !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.crony-section-subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #009a4e;
+  margin-bottom: 10px;
+  background: rgba(0, 154, 78, 0.08);
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+.crony-section-title {
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  color: #0c192c !important;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* Left Column Styling */
+.crony-about-left {
+  padding-right: 25px;
+}
+
+.crony-about-heading {
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  line-height: 1.32 !important;
+  color: #0c192c !important;
+  margin-bottom: 18px !important;
+}
+
+.crony-about-text {
+  font-size: 15px !important;
+  line-height: 27px !important;
+  color: #4b5563 !important;
+  margin-bottom: 16px !important;
+}
+
+/* Director Endorsement Card */
+.crony-director-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px 20px;
+  border: 1px solid #e2e8f0;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.crony-director-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.crony-director-meta {
+  flex: 1;
+  min-width: 170px;
+}
+
+.crony-director-meta h4 {
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  margin: 0 0 2px 0 !important;
+  color: #0c192c !important;
+}
+
+.crony-director-meta span {
+  display: block;
+  font-size: 12px !important;
+  color: #64748b !important;
+  font-weight: 500 !important;
+  margin-bottom: 4px !important;
+}
+
+.crony-signature-img {
+  height: 24px;
+  width: auto;
+  opacity: 0.85;
+}
+
+.crony-explore-btn {
+  background: #009a4e;
+  color: #ffffff !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  padding: 11px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 154, 78, 0.25);
+}
+
+.crony-explore-btn:hover {
+  background: #ffcc12;
+  color: #0c192c !important;
+  transform: translateY(-2px);
+}
+
+/* ========================================================
+   RIGHT COLUMN: CREATIVE SIMPLE TOGGLE & PNG DISPLAY
+   ======================================================== */
+.crony-thermal-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Toggle Header with Creative Arrow Guide */
+.crony-toggle-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 26px;
+  width: 100%;
+  position: relative;
+}
+
+.toggle-hint-guide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  animation: gentleBounce 2.2s infinite ease-in-out;
+}
+
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.toggle-hint-text {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ea580c;
+  letter-spacing: 0.3px;
+  font-style: italic;
+}
+
+.toggle-curved-arrow {
+  width: 44px;
+  height: 26px;
+}
+
+/* Clean, Simple Tactile Toggle Switch (No outer pill container) */
+.crony-simple-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 6px 0 !important;
+}
+
+.crony-toggle-label {
+  font-size: 19px;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+  letter-spacing: -0.2px;
+}
+
+.crony-toggle-label:hover {
+  color: #0c192c;
+}
+
+.crony-toggle-label.is-active-heat {
+  color: #ef4444;
+  font-weight: 800;
+  transform: scale(1.04);
+}
+
+.crony-toggle-label.is-active-cool {
+  color: #009a4e;
+  font-weight: 800;
+  transform: scale(1.04);
+}
+
+/* The Switch Track - Enlarged & Prominent */
+.crony-switch-track {
+  width: 78px;
+  height: 42px;
+  border-radius: 42px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  outline: none;
+}
+
+.crony-switch-track.track-heat {
+  background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+  box-shadow: 0 5px 18px rgba(239, 68, 68, 0.45);
+}
+
+.crony-switch-track.track-cool {
+  background: linear-gradient(135deg, #009a4e 0%, #06b6d4 100%);
+  box-shadow: 0 5px 18px rgba(0, 154, 78, 0.45);
+}
+
+.crony-switch-thumb {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.28);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: block;
+}
+
+.track-heat .crony-switch-thumb {
+  transform: translateX(0);
+}
+
+.track-cool .crony-switch-thumb {
+  transform: translateX(36px);
+}
+
+/* Big Clean PNG Image Stage (No border, transparent background, smooth crossfade) */
+.crony-big-image-stage {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.crony-stage-png {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.4s ease-in-out, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.crony-stage-png.img-layer-cool {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.crony-stage-png.is-active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.crony-stage-png.is-inactive {
+  opacity: 0;
+  transform: scale(0.99);
+  pointer-events: none;
+}
+
+.crony-big-image-stage:hover .crony-stage-png.is-active {
+  transform: scale(1.015);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .crony-about-left {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  
+  .crony-section-title {
+    font-size: 28px !important;
+  }
+  
+  .crony-big-image-stage {
+    max-width: 100%;
   }
 }
 

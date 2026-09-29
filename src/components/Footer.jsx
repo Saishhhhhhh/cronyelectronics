@@ -23,10 +23,12 @@ export default function Footer({ onOpenQuote }) {
           <div className="row">
             <div className="col-lg-6">
               <div className="logo">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '15px' }}>
-                  <img src="/assets/img/logo.png" alt="Crony Electronics" style={{ maxHeight: '50px' }} />
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '18px' }}>
+                  <div className="footer-logo-card">
+                    <img src="/cronylogo.png" alt="Crony Electronics" className="footer-logo-img" />
+                  </div>
                   <div>
-                    <h4 style={{ color: '#fff', fontSize: '18px', fontWeight: 800, margin: 0 }}>CRONY ELECTRONICS</h4>
+                    <h4 style={{ color: '#fff', fontSize: '18px', fontWeight: 800, margin: 0, letterSpacing: '0.5px' }}>CRONY ELECTRONICS</h4>
                     <span style={{ color: '#FFC80B', fontSize: '11px', fontWeight: 600, letterSpacing: '0.8px', textTransform: 'uppercase' }}>Private Limited • Est. 1993</span>
                   </div>
                 </div>

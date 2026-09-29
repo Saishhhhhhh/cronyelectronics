@@ -19,6 +19,22 @@ export default function App() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
+  React.useEffect(() => {
+    const handleHash = () => {
+      if (window.location.hash) {
+        setTimeout(() => {
+          const target = document.querySelector(window.location.hash);
+          if (target) {
+            target.scrollIntoView({ behavior: 'auto' });
+          }
+        }, 150);
+      }
+    };
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, []);
+
   const handleOpenQuoteWithProduct = (product) => {
     setSelectedProduct(product);
     setIsQuoteOpen(true);
