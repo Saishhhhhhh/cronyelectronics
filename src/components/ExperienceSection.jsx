@@ -27,7 +27,7 @@ export default function ExperienceSection() {
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className="crony-about-left">
               <h3 className="crony-about-heading">
-                Pioneering Industrial Thermal & Energy Management Since 1993
+                Pioneering Industrial Thermal & Energy Management <span className="highlight-accent">Since 1993</span>
               </h3>
 
               <p className="crony-about-lead">
