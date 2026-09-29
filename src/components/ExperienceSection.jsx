@@ -8,34 +8,74 @@ export default function ExperienceSection() {
     <section className="gap crony-about-section" id="about">
       <div className="container">
         {/* Section Header */}
-        <div className="heading text-center" style={{ width: '100%', marginBottom: '40px' }}>
-          <span className="crony-section-subtitle">About Crony Electronics</span>
-          <h2 className="crony-section-title">
+        <div className="heading text-center" style={{ maxWidth: '850px', margin: '0 auto 42px auto' }}>
+          <img 
+            src="/assets/img/heading-img.png" 
+            alt="Crony Energy Saving Excellence" 
+            style={{ margin: '0 auto 14px auto', display: 'block' }} 
+          />
+          <span className="crony-clean-subtitle">
+            About Crony Electronics
+          </span>
+          <h2 className="crony-clean-title">
             30+ Years of Energy Saving Excellence
           </h2>
         </div>
 
         <div className="row align-items-center">
-          {/* Left Column: Clear About Us Story */}
+          {/* Left Column: Authentic & Structured About Details */}
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className="crony-about-left">
               <h3 className="crony-about-heading">
                 Pioneering Industrial Thermal & Energy Management Since 1993
               </h3>
 
-              <p className="crony-about-text">
-                <strong>Crony Electronics Pvt Ltd</strong> has been pioneering energy-saving solutions for over three decades. First introducing dedicated energy-saving systems for air conditioners in 1994 and microprocessor digital controllers in 1997 with Eata Electronics, we help commercial and industrial facilities achieve documented reductions in electricity bills.
+              <p className="crony-about-lead">
+                For over three decades, <strong>Crony Electronics Pvt Ltd</strong> has engineered proven energy-saving and asset protection solutions. First introducing dedicated AC energy systems in 1994 and microprocessor digital controllers in 1997 with Eata Electronics, we help commercial facilities and industrial plants achieve verified reductions in electricity consumption.
               </p>
 
-              <p className="crony-about-text">
-                Our innovative portfolio includes <strong>Elastoclad Heat-Reflective Roof Coatings</strong> that block solar heat from penetrating buildings, <strong>Solid-State 20ms Voltage Regulators (VRP)</strong> for automated mission-critical machinery, and German <strong>nora® high-performance rubber floorings</strong>.
-              </p>
+              {/* 3 Core Industrial Pillars */}
+              <div className="crony-pillars-list">
+                <div className="crony-pillar-item">
+                  <div className="pillar-icon">
+                    <i className="flaticon-battery"></i>
+                  </div>
+                  <div className="pillar-text">
+                    <h4>Microprocessor AC Optimization</h4>
+                    <p>Co-developed digital controllers regulating HVAC compressors to cut power draw by 15% to 30% with zero cooling loss.</p>
+                  </div>
+                </div>
 
-              <p className="crony-about-text">
-                Today, our solutions are trusted across India by industry giants such as <strong>ONGC, Indian Railways, L&T, Mahindra & Mahindra, Hindalco, Kirloskar, and Sesa Goa</strong>.
-              </p>
+                <div className="crony-pillar-item">
+                  <div className="pillar-icon">
+                    <i className="flaticon-water-energy"></i>
+                  </div>
+                  <div className="pillar-text">
+                    <h4>Elastoclad Heat-Reflective Roof Barrier</h4>
+                    <p>Blocks up to 85% of solar infrared rays, reducing building surface temperatures by 10°C–12°C and lowering HVAC load.</p>
+                  </div>
+                </div>
 
-              {/* Director Endorsement */}
+                <div className="crony-pillar-item">
+                  <div className="pillar-icon">
+                    <i className="flaticon-wind-energy"></i>
+                  </div>
+                  <div className="pillar-text">
+                    <h4>20ms Solid-State Voltage Regulation (VRP)</h4>
+                    <p>One of the world's fastest solid-state stabilizers (3 to 360 kVA), safeguarding sensitive automation, CNCs, and electronics.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Trusted By Client Bar */}
+              <div className="crony-trust-bar">
+                <span className="trust-bar-label">Trusted Across India By:</span>
+                <span className="trust-bar-clients">
+                  <strong>ONGC</strong> • <strong>Indian Railways</strong> • <strong>L&T</strong> • <strong>Mahindra</strong> • <strong>Hindalco</strong> • <strong>Kirloskar</strong>
+                </span>
+              </div>
+
+              {/* Director Endorsement Card */}
               <div className="crony-director-card">
                 <img 
                   src="/assets/img/works/director_maulik_shah.jpg" 
