@@ -54,32 +54,6 @@ export default function ExperienceSection() {
                   </div>
                 </li>
               </ul>
-
-              {/* Trusted By Client Line (Natural text, no box) */}
-              <div className="crony-trust-line">
-                <span className="trust-prefix">Trusted Nationwide By:</span>
-                <span className="trust-names">ONGC • Indian Railways • L&T • Mahindra & Mahindra • Hindalco • Kirloskar</span>
-              </div>
-
-              {/* Director Endorsement (Zero card border, natural author block) */}
-              <div className="crony-director-block">
-                <div className="crony-director-profile">
-                  <img 
-                    src="/assets/img/works/director_maulik_shah.jpg" 
-                    alt={cronyData.company.director} 
-                    className="crony-director-avatar"
-                  />
-                  <div className="crony-director-meta">
-                    <h4>{cronyData.company.director}</h4>
-                    <span>Managing Director, {cronyData.company.shortName}</span>
-                    <img src="/assets/img/signature.png" alt="Signature" className="crony-signature-img" />
-                  </div>
-                </div>
-
-                <a href="#services" className="crony-explore-btn">
-                  Discover Solutions <i className="flaticon-right-up"></i>
-                </a>
-              </div>
             </div>
           </div>
 
