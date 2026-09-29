@@ -1068,9 +1068,10 @@ button.close-search i {
 .hero-section-one {
     padding-top: 75px;
     position: relative;
-    clip-path: none !important;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     padding-bottom: 111px;
     background-position: center;
+    background-size: cover;
 }
 .hero-section-two .hero-text h1 ,
 .hero-section-one .hero-text h1 {
@@ -1084,7 +1085,7 @@ button.close-search i {
     opacity: 1;
     visibility: visible;
     transition-delay: .8s;
-    transform: translateY(0)
+    transform: translateY(0);
 }
 .hero-two-slider span,
 .hero-section-one .text {
@@ -1093,14 +1094,14 @@ button.close-search i {
     visibility: hidden;
     transition: all .5s ease;
     transform: translateX(-50px);
-    margin-bottom: 0
+    margin-bottom: 0;
 } 
 .slick-active  span,
 .hero-section-one.swiper-slide-active .text {
     opacity: 1;
     visibility: visible;
     transition-delay: 1.3s;
-    transform: translateX(0)
+    transform: translateX(0);
 }
 .slick-list.draggable {
     margin: 0;
@@ -1114,7 +1115,7 @@ button.close-search i {
 }
 .hero-section-one.swiper-slide-active .link-box,
 .slick-active .link-box {
-    transform: scale(1)
+    transform: scale(1);
 } 
 @keyframes fadeInOne {
   0% {
@@ -1180,19 +1181,17 @@ button.close-search i {
     opacity: .5;
     content: "";
     top: 0;
-    clip-path: none !important;
-    display: none !important;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 .hero-img {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
+    text-align: center;
+    position: relative;
+    padding-top: 17px;
 }
 .hero-img img {
-    display: none !important;
+    position: relative;
+    padding-left: 30px;
+    z-index: 1;
 }
 .hero-text {
     position: relative;
